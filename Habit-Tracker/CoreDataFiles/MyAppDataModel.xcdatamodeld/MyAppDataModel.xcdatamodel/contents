@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22522" systemVersion="23D60" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="Habits" representedClassName="Habits" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="String"/>
+        <attribute name="habitCounter" optional="YES" attributeType="String"/>
+        <attribute name="habitIcon" optional="YES" attributeType="String"/>
+        <attribute name="habitName" optional="YES" attributeType="String"/>
+        <attribute name="habitTime" optional="YES" attributeType="String"/>
+        <attribute name="isDone" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="repsPerDay" optional="YES" attributeType="String"/>
+        <attribute name="uuid" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="HabitsCount" representedClassName="HabitsCount" syncable="YES">
+        <attribute name="count" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="date" optional="YES" attributeType="String"/>
+    </entity>
+</model>
