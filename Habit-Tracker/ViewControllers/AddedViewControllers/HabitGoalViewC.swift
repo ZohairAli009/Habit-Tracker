@@ -10,11 +10,8 @@ import UIKit
 class HabitGoalViewC: UIViewController {
     
     @IBOutlet var doneBtn: UIButton!
-    
     @IBOutlet var repsTextField: UITextField!
-    
     @IBOutlet var repsLabelTextField: UITextField!
-    
     
     var onTheseDays: [String] = []
     var dayBtnTags: [Int] = []
@@ -23,7 +20,6 @@ class HabitGoalViewC: UIViewController {
     var repsPerDay: String = ""
     var repsLabel: String = ""
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,7 +27,6 @@ class HabitGoalViewC: UIViewController {
         dayBtnTags = [1,2,3,4,5,6,7]
         setupTextFields()
     }
-    
     
     func setupTextFields(){
         
@@ -63,11 +58,9 @@ class HabitGoalViewC: UIViewController {
         view.endEditing(true)
     }
     
-    
     @IBAction func cancelBtnTapped(_ sender: UIButton) {
         self.dismiss(animated: true)
     }
-    
     
     @IBAction func doneBtnTapped(_ sender: Any) {
         
@@ -101,16 +94,14 @@ class HabitGoalViewC: UIViewController {
             dayBtnTags.removeAll { $0 == sender.tag }
             
         } else {
+            
             sender.backgroundColor = .init(red: 44/255, green: 72/255, blue: 106/255, alpha: 1)
             dayBtnTags.append(sender.tag)
             let text = sender.titleLabel?.text
             sender.setTitle(text, for: .normal)
             sender.setTitleColor(.label , for: .normal)
         }
-        
     }
-    
-    
 }
 
 
@@ -126,5 +117,4 @@ extension HabitGoalViewC: UITextFieldDelegate {
             repsLabel = textField.text!
         }
     }
-    
 }

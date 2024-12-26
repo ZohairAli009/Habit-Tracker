@@ -106,10 +106,10 @@
 		662BB3B92C8432A900DC0251 /* Habit-Tracker */ = {
 			isa = PBXGroup;
 			children = (
-				662BB3DF2C843E3A00DC0251 /* Constants */,
-				662BB3DA2C8437E200DC0251 /* CustomItems */,
 				662BB3D52C84353700DC0251 /* Delegates */,
 				662BB3D62C84354A00DC0251 /* ViewControllers */,
+				662BB3DF2C843E3A00DC0251 /* Constants */,
+				662BB3DA2C8437E200DC0251 /* CustomItems */,
 				662BB3D72C84357600DC0251 /* Storyboards */,
 				662BB3C62C8432AC00DC0251 /* Assets.xcassets */,
 				662BB3CB2C8432AC00DC0251 /* Info.plist */,
@@ -130,8 +130,8 @@
 		662BB3D62C84354A00DC0251 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				66D59D122CB261EE00AAABAE /* AddedViewControllers */,
 				66D59D112CB261B100AAABAE /* TabBarViewControllers */,
+				66D59D122CB261EE00AAABAE /* AddedViewControllers */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -189,10 +189,10 @@
 		66D59D112CB261B100AAABAE /* TabBarViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				662BB3BE2C8432A900DC0251 /* HomeViewC.swift */,
 				662BB3DD2C8438D800DC0251 /* TabBarViewC.swift */,
 				662BB3D32C84350700DC0251 /* StatisticsViewC.swift */,
 				662BB3D12C8433CB00DC0251 /* addHabitViewC.swift */,
-				662BB3BE2C8432A900DC0251 /* HomeViewC.swift */,
 			);
 			path = TabBarViewControllers;
 			sourceTree = "<group>";

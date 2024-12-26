@@ -18,6 +18,7 @@ enum emptyStateAction{
 }
 
 var showConffetiKey = true 
+
 struct CodeHelper {
     
     // MARK: - UIHelper
@@ -168,7 +169,7 @@ struct CodeHelper {
         originalFormatter.dateFormat = "MMM d,"
         
         if let date = originalFormatter.date(from: dateString) {
-            var calendar = Calendar.current
+            let calendar = Calendar.current
             let currentYear = calendar.component(.year, from: Date())
             
             // Extract month and day components from the parsed date

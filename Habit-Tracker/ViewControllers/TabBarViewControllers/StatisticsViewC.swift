@@ -85,7 +85,6 @@ class StatisticsViewC: UIViewController {
         setupYStackView(Count: uniqueHabits.count)
         
         let countList = getDoneHabitsCountList()
-        print(countList)
         removePreviousViewsFromBarStackView()
         setupBarsStackView(list: countList, habitCount: habitCount) 
     }
